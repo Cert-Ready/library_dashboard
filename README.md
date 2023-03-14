@@ -2,6 +2,8 @@
 
 Library Dashboard - The Odin Project
 
+- [Live Demo](https://cert-ready.github.io/library_dashboard/)
+
 ## About
 
 - Library dashboard Following The Odin Project

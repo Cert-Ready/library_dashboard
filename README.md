@@ -1,6 +1,6 @@
 # library
 
-Library Dashboard- The Odin Project
+Library Dashboard - The Odin Project
 
 ## About
 

@@ -12,5 +12,6 @@ Library Dashboard - The Odin Project
 
   - [Google Fonts](https://fonts.google.com/)
   - [Image from undraw.co](https://undraw.co/)
+  - [Icons From](https://pictogrammers.com/)
   - [Normalize.css v8.0.1](https://necolas.github.io/normalize.css/)
   - [Font Awesome \<cdnjs\>](https://cdnjs.com/libraries/font-awesome)

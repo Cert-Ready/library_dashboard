@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="icon" type="image/x-icon" href="./img/book-open-variant.svg" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/grad.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="grid main-grid">
+    <header class="header">
+      <img src="./img/mobile-nav/menu.svg" alt="mobile navigation" class="hamburger-menu iconV01" />
+      <div class="navigation">
+        <nav class="navV01">
+          <ul>
+            <li>
+              <a href="./index.html"><i class="fa-solid fa-book-open iconV01"></i> My Library</a>
+            </li>
+            <li class="add-book"><i class="fa-solid fa-circle-plus iconV01"></i> Add Book</li>
+            <li class="add-sample"><i class="fa-solid fa-circle-plus iconV01"></i> Add Sample</li>
+          </ul>
+        </nav>
+
+        <div class="book-log">
+          <h2>Library Log</h2>
+          <p>Total books: <span class="total-books">0</span>.</p>
+          <p>Complete: <span class="read-books">0</span>.</p>
+          <p>In Progress: <span class="unread-books">0</span>.</p>
+        </div>
+
+        <nav class="navV01 navV02">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-github iconV01"></i>Cert Ready</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="hero">My Books</h2>
+      <div class="books grid gap"></div>
+    </main>
+    <footer class="grid formV01-container">
+      <form id="formV01" action="/">
+        <ul class="center-text">
+          <li class="flex-space-between">
+            <h2>Adventure Awaits</h2>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </li>
+          <li>
+            <label for="book-title">Book Title</label>
+            <input type="text" name="book-title" id="book-title" placeholder="Book Title" />
+            <div class="error-msj"></div>
+          </li>
+          <li>
+            <label for="book-author">Book Author</label>
+            <input type="text" name="book-author" id="book-author" placeholder="Book Author" />
+            <div class="error-msj"></div>
+          </li>
+          <li>
+            <label for="book-pages">Number of Pages</label>
+            <input
+              type="number"
+              name="book-pages"
+              id="book-pages"
+              placeholder="Number of Pages"
+              min="1"
+            />
+            <div class="error-msj"></div>
+          </li>
+          <li>
+            <label for="book-status">Book Status</label>
+            <select id="book-status" name="book-status">
+              <option value="">Have you Read This Book?</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+            <div class="error-msj"></div>
+          </li>
+          <li class="button-container center-text">
+            <button type="submit" class="buttonV01 submit-btn">Add</button>
+          </li>
+        </ul>
+      </form>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+    <script src="./js/form-display.js"></script>
+    <script src="./js/form-validation.js"></script>
+  </body>
+</html>

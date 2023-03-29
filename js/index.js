@@ -8,19 +8,34 @@ const formEl = document.querySelector('#formV01');
 formEl.addEventListener('submit', (e) => (e.preventDefault(), addBookToLibrary()));
 addSample.onclick = () => addSampleBook();
 
-// object constructor function for Book
-function Book(title, author, pages, status) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.status = status;
-}
+// ****** Refactored as a Class *****
+// // object constructor function for Book
+// function Book(title, author, pages, status) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.status = status;
+// }
 
-Book.prototype = {
-  protoToggleStatus() {
+// Book.prototype = {
+//   protoToggleStatus() {
+//     this.status = !this.status;
+//   },
+// };
+
+// class for Book
+class Book {
+  constructor(title, author, pages, status) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.status = status;
+  }
+
+  bookToggleStatus() {
     this.status = !this.status;
-  },
-};
+  }
+}
 
 // add book with modal
 function addBookToLibrary() {
@@ -125,7 +140,9 @@ const deleteBook = (index) => {
 
 // helper function to handle book status toggle
 const toggleStatus = (index) => {
-  myLibrary[index].protoToggleStatus();
+  // refactored to use as a Class
+  // myLibrary[index].protoToggleStatus();
+  myLibrary[index].bookToggleStatus();
   renderLibrary();
 };
 
